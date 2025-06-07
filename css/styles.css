@@ -1,17 +1,43 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+    font-family: segoi-ui;
+    font-size: 1.6rem;
+}
+
+img {
+    max-width: 100%; /** La imagen se adapta al tamaño del padre**/
+}
+
 @font-face {
     font-family: segoi-ui;
     src: url('../segoe-ui-4-cufonfonts/Segoe\ UI.ttf');
 }
 
-body {
-    font-family: segoi-ui;
-}
-
-img {
-    max-width: 100%;
-}
-
 .titulo {
     font-size: 5.8rem;
-    background-color: #053477;
+    color: #053477;
+}
+
+.imagenfondo {
+    background-size: cover;
+    background-position: center center;
+    background-position: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1
+}
+
+.imgfondo {
+    height: 90rem;
+}
+
+.imglogo {
+    height: 5rem;
 }
